@@ -1,3 +1,3 @@
 # MessageBox
 
-modal dialog to display some informational message
+`run.py` displays some modal dialogs to display some informational message.
