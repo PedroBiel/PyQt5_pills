@@ -18,7 +18,7 @@ class MessageBox:
     
     def __init__(self, window_title, text, info_text, detail_text=''):
         """
-        Display informational messages.
+        Displays informational messages.
         
         setStandardButtons():   
             QMessageBox.Ok
@@ -31,6 +31,7 @@ class MessageBox:
             QMessageBox.Abort
             QMessageBox.Retry
             QMessageBox.Ignore
+            
         e.g.: msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
         """
         self.window_title = window_title
@@ -41,6 +42,8 @@ class MessageBox:
         self.msg = QMessageBox()
         
     def critical(self):
+        """Provides a modal dialog for reporting critical errors."""
+        
         self.msg.setIcon(QMessageBox.Critical)
         self.msg.setWindowTitle(self.window_title)
         self.msg.setText(self.text)
@@ -49,6 +52,8 @@ class MessageBox:
         self.msg.exec_()
     
     def information(self):
+        """Provides a modal dialog reporting information about normal operations."""
+        
         self.msg.setIcon(QMessageBox.Information)
         self.msg.setWindowTitle(self.window_title)
         self.msg.setText(self.text)
@@ -57,6 +62,8 @@ class MessageBox:
         self.msg.exec_()
     
     def question(self):
+        """Provides a modal dialog asking a question during normal operations."""
+        
         self.msg.setIcon(QMessageBox.Question)
         self.msg.setWindowTitle(self.window_title)
         self.msg.setText(self.text)
@@ -65,6 +72,8 @@ class MessageBox:
         self.msg.exec_()
     
     def warning(self):
+        """Provides a modal dialog reporting non-critical errors."""
+        
         self.msg.setIcon(QMessageBox.Warning)
         self.msg.setWindowTitle(self.window_title)
         self.msg.setText(self.text)
@@ -73,6 +82,8 @@ class MessageBox:
         self.msg.exec_()
     
     def critical_detailed_text(self):
+        """Provides a modal dialog for reporting critical errors."""
+        
         self.msg.setIcon(QMessageBox.Critical)
         self.msg.setWindowTitle(self.window_title)
         self.msg.setText(self.text)
@@ -82,6 +93,8 @@ class MessageBox:
         self.msg.exec_()
     
     def information_detailed_text(self):
+        """Provides a modal dialog reporting information about normal operations."""
+        
         self.msg.setIcon(QMessageBox.Information)
         self.msg.setWindowTitle(self.window_title)
         self.msg.setText(self.text)
@@ -91,6 +104,8 @@ class MessageBox:
         self.msg.exec_()
     
     def question_detailed_text(self):
+        """Provides a modal dialog asking a question during normal operations."""
+        
         self.msg.setIcon(QMessageBox.Question)
         self.msg.setWindowTitle(self.window_title)
         self.msg.setText(self.text)
@@ -100,6 +115,8 @@ class MessageBox:
         self.msg.exec_()
     
     def warning_detailed_text(self):
+        """Provides a modal dialog reporting non-critical errors."""
+        
         self.msg.setIcon(QMessageBox.Warning)
         self.msg.setWindowTitle(self.window_title)
         self.msg.setText(self.text)
