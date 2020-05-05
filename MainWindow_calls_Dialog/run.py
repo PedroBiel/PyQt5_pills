@@ -21,7 +21,7 @@ from dialog import Dialog
 class MainWindow(QMainWindow):
 
     def __init__(self, parent=None):
-        """Run the MainWindow and calls the Dialog."""
+        """Runs the MainWindow and calls the Dialog."""
 
         QMainWindow.__init__(self, parent)
         uic.loadUi('view/mainwindow.ui', self)
