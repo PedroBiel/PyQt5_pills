@@ -22,11 +22,15 @@ class CntDialog:
         self.d = dialog
                 
     def dialog_initial_data(self):
+        """Initial data of the project."""
+        
         initial_data = InitialDataDialog.DATA
         
         return initial_data
         
     def dialog_data(self):
+        """Dictionary with the data to be displayed in the Dialog."""
+        
         input1 = self.d.dlg_input1.text()
         input2 = self.d.dlg_input2.text()
         self.d.d_dlg_data['input1'] = input1
