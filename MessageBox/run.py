@@ -47,8 +47,8 @@ class MainWindow(QMainWindow):
     
     def messagebox_critical(self):
         """
-        Given the window title, text and informative text provides a modal dialog
-        for reporting critical errors.
+        Given the window title, text and informative text
+        provides a modal dialog for reporting critical errors.
         """
         
         window_title = 'Window Title'
@@ -59,8 +59,8 @@ class MainWindow(QMainWindow):
     
     def messagebox_information(self):
         """
-        Given the window title, text and informative text provides a modal dialog
-        for reporting information about normal operations.
+        Given the window title, text and informative text
+        provides a modal dialog for reporting information about normal operations.
         """
         
         window_title = 'Window Title'
@@ -71,8 +71,8 @@ class MainWindow(QMainWindow):
 
     def messagebox_question(self):
         """
-        Given the window title, text and informative text provides a modal dialog
-        for rasking a question during normal operations.
+        Given the window title, text and informative text
+        provides a modal dialog for rasking a question during normal operations.
         """
         
         window_title = 'Window Title'
@@ -83,8 +83,8 @@ class MainWindow(QMainWindow):
     
     def messagebox_warning(self):
         """
-        Given the window title, text and informative text provides a modal dialog
-        for reporting non-critical errors.
+        Given the window title, text and informative text
+        provides a modal dialog for reporting non-critical errors.
         """
         
         window_title = 'Window Title'
