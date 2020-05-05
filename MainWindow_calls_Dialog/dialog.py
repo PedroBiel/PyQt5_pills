@@ -49,4 +49,6 @@ class Dialog(QDialog):
         self.btn_cancel.clicked.connect(self.close)
         
     def d_dialog_data(self):
+        """Returns the dictionary with the data."""
+        
         return self.d_dlg_data
