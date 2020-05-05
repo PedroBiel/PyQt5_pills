@@ -43,11 +43,15 @@ class MainWindow(QMainWindow):
         self.btn_refresh.clicked.connect(self.get_dialog_inputs)
     
     def call_dialog(self):
+        """Calls the Dialog."""
+        
         self.dialog.show()
         self.d_data = self.dialog.d_dialog_data()
         # self.get_dialog_inputs()
         
     def get_dialog_inputs(self):
+        """Displays the inputs of the Dialog in the MainWindow."""
+        
         dlg = self.dialog
         dlg_data = dlg.d_dialog_data()
         self.input1.setText(dlg_data['input1'])
