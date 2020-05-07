@@ -20,7 +20,7 @@ from pyqt5_recipes.filedialog import FileDialog
 class MainWindow(QMainWindow):
 
     def __init__(self, parent=None):
-        """Calls a dialog that allow users to select files or directorie."""
+        """Call a dialog that allow users to select files or directorie."""
 
         QMainWindow.__init__(self, parent)
         uic.loadUi('view/mainwindow.ui', self)
@@ -37,7 +37,7 @@ class MainWindow(QMainWindow):
         self.btn_save_file_name.clicked.connect(self.save_file_name)
  
     def existing_directory(self):
-        """Returns an existing directory selected by the user as string."""
+        """Return an existing directory selected by the user as string."""
 
         caption = 'Caption'
         directory = 'C:/'
@@ -48,7 +48,7 @@ class MainWindow(QMainWindow):
  
     def open_file_name(self):
         """
-        Returns from existing file selected by the user the directory and the
+        Return from existing file selected by the user the directory and the
         file name as one string.
         """
 
@@ -62,7 +62,7 @@ class MainWindow(QMainWindow):
     
     def save_file_name(self):
         """
-        Returns the directory and the file name selected by the user as one
+        Return the directory and the file name selected by the user as one
         string.
         """
 
