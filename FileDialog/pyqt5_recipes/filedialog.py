@@ -27,7 +27,7 @@ class FileDialog:
         self.ftr = filter
 
     def get_existing_directory(self):
-        """Returns an existing directory selected by the user as string."""
+        """Return an existing directory selected by the user as string."""
 
         directory = QFileDialog.getExistingDirectory(
                 caption=self.caption,
@@ -39,7 +39,7 @@ class FileDialog:
     
     def get_open_file_name(self):
         """
-        Returns from existing file selected by the user the directory and the
+        Return from existing file selected by the user the directory and the
         file name as one string.
         """
 
@@ -53,7 +53,7 @@ class FileDialog:
 
     def get_save_file_name(self):
         """
-        Returns the directory and the file name selected by the user as one
+        Return the directory and the file name selected by the user as one
         string.
         """
 
