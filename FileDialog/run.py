@@ -20,7 +20,7 @@ from pyqt5_recipes.filedialog import FileDialog
 class MainWindow(QMainWindow):
 
     def __init__(self, parent=None):
-        """Call a dialog that allow users to select files or directorie."""
+        """Call a dialog that allow users to select files or directories."""
 
         QMainWindow.__init__(self, parent)
         uic.loadUi('view/mainwindow.ui', self)
