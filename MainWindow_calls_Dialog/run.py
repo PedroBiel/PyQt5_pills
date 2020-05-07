@@ -21,7 +21,7 @@ from dialog import Dialog
 class MainWindow(QMainWindow):
 
     def __init__(self, parent=None):
-        """Runs the MainWindow and calls the Dialog."""
+        """Run the MainWindow and calls the Dialog."""
 
         QMainWindow.__init__(self, parent)
         uic.loadUi('view/mainwindow.ui', self)
@@ -43,14 +43,14 @@ class MainWindow(QMainWindow):
         self.btn_refresh.clicked.connect(self.get_dialog_inputs)
     
     def call_dialog(self):
-        """Calls the Dialog."""
+        """Call the Dialog."""
         
         self.dialog.show()
         self.d_data = self.dialog.d_dialog_data()
         # self.get_dialog_inputs()
         
     def get_dialog_inputs(self):
-        """Displays the inputs of the Dialog in the MainWindow."""
+        """Display the inputs of the Dialog in the MainWindow."""
         
         dlg = self.dialog
         dlg_data = dlg.d_dialog_data()
