@@ -2,10 +2,10 @@
 """
 Dialog with information of the version in QTextEdit
 
-Created on 14.05.2020
+Created on 16.06.2020
 
 __author__ = Pedro Biel
-__version__ = 0.0.0
+__version__ = 0.0.1
 __email__ = pbiel@taimweser.com
 """
 
@@ -33,6 +33,7 @@ class DlgVersion(QDialog):
         
         # PyQt objects.
         self.txt_version = self.textEdit_version
+        self.txt_version.setReadOnly(True)
         self.txt_version.setCurrentFont(QFont('Consolas', 10))
         self.btn_ok = self.pushButton_ok
         
